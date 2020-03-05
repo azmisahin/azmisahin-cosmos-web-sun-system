@@ -1,0 +1,46 @@
+/*
+    ████████████████████████████████████████████████████████████████████████████████████████████████████
+    * Application: Cybotranik Site Template
+    * https://cybotranik-site-template.gitlab.io/
+    ════════════════════════════════════════════════════════════════════════════════════════════════════
+    * Copyright azmisahin@outlook.com
+    * Licence (https://azmisahin.gitlab.io/LICENSE)
+    ████████████████████████████████████████████████████████████████████████████████████████████████████
+*/
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.carousel-caption {
+    position: absolute;
+    right: 5%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+.image {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.image:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
